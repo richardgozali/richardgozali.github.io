@@ -11,6 +11,7 @@ self.addEventListener('install', function (event) {
            './',
           './index.html',
           '/offline.html',
+          './booking.html',
           '/contact.html',
           './js/app.js',
           './js/feed.js',
