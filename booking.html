@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Fix it </title>
-	<link rel="icon" href="/img/icon/icon-48.png" type="image/gif" sizes="16x16">
+	<title>Webworld website for high end mobiles,like samsung nokia mobile website templates for free | Contact :: w3layouts</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </script>
@@ -113,25 +112,25 @@
 					</div>
 					<h3><span>Online</span> Booking</h3>
 				</div>
-				<form>
+				<form action="">
 					<div class="dropdown">
 					</div>
 					<div class="text-box-grids">
 						<div class="text-box">
 							<label>Contoh Nama = Budi</label>
-							<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+							<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" id="nama" required>
 						</div>
 						<div class="text-box">
 							<label>Contoh Email = budi@budi.com</label>
-							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"required>
+							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" id ="email"required>
 						</div>
 						<div class="text-box">
 							<label>Contoh Plat Mobil = L 1111 LL</label>
-							<input type="text" value="Plat Mobil" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Plat';}"required>
+							<input type="text" value="Plat Mobil" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Plat';}"id="plat" required>
 						</div>
 						<div class="text-box">
 							<label>Contoh Nama Mobil = Avanza</label>
-							<input type="text" value="Mobil" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobil';}"required>
+							<input type="text" value="Mobil" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobil';}" id="mobil" required>
 						</div>
 						<div class="text-box">
 							<label for="jadwal">Jadwal Servis ( on-time ) :</label>
@@ -145,20 +144,30 @@
 					<!-- <div class="textarea-box">
 						<textarea rows="2" cols="70" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
 					</div> -->
-					<input type="submit" value="Send"  />
+					<!-- <input type="submit" value="Send"  /> -->
+					<button class="btn  btn-block" style="width: 100%;" id="buttons">Send</button>
 				</form>
-				<button class="btn btn-success" id="buttons">Click me</button>
 				<script>
-					var a;
+
 					$("#buttons").click(function(){
+							var nama = $("#nama").val();
+							var email = $("#email").val();
+							var plat = $("#plat").val();
+							var mobil = $("#mobil").val();
+							var jadwal = $("#jadwal").val();
    						$.ajax({
 							type: 'POST',
-							url: 'http://tos.petra.ac.id/~c14170049/Kometra/getall.php',
+							url: 'http://tos.petra.ac.id/~c14170049/Kometra/booking.php',
 							data: {
-								'user_id' : 1
+								'user_id' : 1,
+								'nama'  : nama,
+								'email'  : email,
+								'plat'  : plat,
+								'mobil'  : mobil,
+								'jadwal' : jadwal,
 							},
 							success: function(data){
-								alert(data[0].id_book);
+								alert("Data telah terkirim")
 							},
 							 error: function () {
 						       
