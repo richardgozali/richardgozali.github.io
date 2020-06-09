@@ -22,6 +22,7 @@ self.addEventListener('install', function (event) {
           './css/style.css',
           './js/active.js',
           './css/animate.css',
+	  './login/',
 
         ]);
       })
