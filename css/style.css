@@ -1103,7 +1103,29 @@ body{
 	-moz-border-radius: 0.3em;
 	-o-border-radius: 0.3em;
 }
+.text-box input[type="password"],.textarea-box textarea{
+	width: 90%;
+	background: #F5F5F5;
+	font-family: 'open_sansregular';
+	color: #7C7770;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+	-webkit-appearance: none;
+	border: 1px solid #E1E2E9;
+	padding: 0.8em;
+	outline:none;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+}
 .text-box input[type="text"]:hover,.textarea-box textarea:hover{
+	border: 1px solid #71B6D5;
+}
+.text-box input[type="password"]:hover,.textarea-box textarea:hover{
 	border: 1px solid #71B6D5;
 }
 .textarea-box textarea{
@@ -1217,6 +1239,9 @@ body{
 	.text-box input[type="text"], .textarea-box textarea {
 		width: 86%;
 	}
+	.text-box input[type="passsword"], .textarea-box textarea {
+		width: 86%;
+	}
 	.textarea-box textarea {
 		width: 93%;
 		resize:none;
@@ -1267,6 +1292,9 @@ body{
 		width: 43%;
 	}
 	.text-box input[type="text"], .textarea-box textarea {
+		width: 86%;
+	}
+	.text-box input[type="password"], .textarea-box textarea {
 		width: 86%;
 	}
 	.textarea-box textarea {
@@ -1373,6 +1401,9 @@ body{
 		width: 42%;
 	}
 	.text-box input[type="text"], .textarea-box textarea {
+		width: 86%;
+	}
+	.text-box input[type="password"], .textarea-box textarea {
 		width: 86%;
 	}
 	.textarea-box textarea {
@@ -1489,6 +1520,9 @@ body{
 		width: 40%;
 	}
 	.text-box input[type="text"], .textarea-box textarea {
+		width: 94%;
+	}
+	.text-box input[type="password"], .textarea-box textarea {
 		width: 94%;
 	}
 	.text-box {
@@ -1641,6 +1675,9 @@ body{
 		margin-top: 4em;
 	}
 	.text-box input[type="text"], .textarea-box textarea {
+		width: 92%;
+	}
+	.text-box input[type="password"], .textarea-box textarea {
 		width: 92%;
 	}
 	.text-box {
